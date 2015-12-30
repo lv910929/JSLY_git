@@ -10,6 +10,53 @@ package com.js.jsly;
 public final class R {
     public static final class attr {
     }
+    public static final class color {
+        public static final int accent=0x7f04001a;
+        public static final int actionsheet_blue=0x7f040020;
+        public static final int actionsheet_gray=0x7f040022;
+        public static final int actionsheet_red=0x7f040021;
+        public static final int alertdialog_line=0x7f04001f;
+        public static final int background_caption=0x7f04001d;
+        public static final int background_content=0x7f04001c;
+        public static final int background_dark=0x7f040019;
+        public static final int black=0x7f040015;
+        public static final int blue_bg=0x7f040001;
+        public static final int btn_color_false=0x7f040027;
+        /** 按钮的颜色及文字颜色
+         */
+        public static final int btn_color_true=0x7f040026;
+        public static final int color_d2=0x7f04000d;
+        public static final int color_f2f2f2=0x7f040028;
+        public static final int color_menu_back=0x7f040023;
+        public static final int color_menu_lines=0x7f040024;
+        public static final int color_menu_top=0x7f04001e;
+        public static final int commo_text_color=0x7f040009;
+        public static final int darkgray=0x7f040010;
+        public static final int date_1=0x7f040005;
+        public static final int date_2=0x7f040006;
+        public static final int dimgray=0x7f040013;
+        public static final int focus_circle_bg=0x7f040008;
+        public static final int gallery_alpha=0x7f04000b;
+        public static final int gallery_background=0x7f04000a;
+        public static final int gray=0x7f04000f;
+        public static final int gray_bg=0x7f040003;
+        public static final int gray_txt=0x7f040004;
+        public static final int griditems_bg=0x7f040018;
+        public static final int light_blue_bg=0x7f040002;
+        public static final int lightgray=0x7f040011;
+        public static final int line=0x7f040007;
+        public static final int primary=0x7f04001b;
+        public static final int red=0x7f040016;
+        public static final int sandybrown=0x7f040012;
+        public static final int silver=0x7f040014;
+        public static final int text_field_pressed=0x7f04000e;
+        public static final int title_bg=0x7f040000;
+        /** 标题的颜色
+         */
+        public static final int title_color_ff0000=0x7f040025;
+        public static final int transparent=0x7f040017;
+        public static final int white=0x7f04000c;
+    }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
 
@@ -18,25 +65,40 @@ public final class R {
          would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively).
     
          */
-        public static final int activity_horizontal_margin=0x7f040000;
-        public static final int activity_vertical_margin=0x7f040001;
+        public static final int activity_horizontal_margin=0x7f050000;
+        public static final int activity_vertical_margin=0x7f050001;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
+        public static final int begin_normal=0x7f020000;
+        public static final int begin_press=0x7f020001;
+        public static final int bg_guide_1=0x7f020002;
+        public static final int bg_guide_2=0x7f020003;
+        public static final int bg_guide_3=0x7f020004;
+        public static final int bg_guide_4=0x7f020005;
+        public static final int btn_bg=0x7f020006;
+        public static final int btn_bg_normal=0x7f020007;
+        public static final int btn_bg_pressed=0x7f020008;
+        public static final int ic_launcher=0x7f020009;
+        public static final int selector_begin_bg=0x7f02000a;
+        public static final int splash_bg=0x7f02000b;
     }
     public static final class id {
-        public static final int action_settings=0x7f080000;
+        public static final int action_settings=0x7f090003;
+        public static final int btn_begin=0x7f090001;
+        public static final int viewpager_guide=0x7f090000;
+        public static final int webview_main=0x7f090002;
     }
     public static final class layout {
-        public static final int activity_main=0x7f030000;
+        public static final int activity_guide=0x7f030000;
+        public static final int activity_main=0x7f030001;
+        public static final int activity_splash=0x7f030002;
     }
     public static final class menu {
-        public static final int main=0x7f070000;
+        public static final int main=0x7f080000;
     }
     public static final class string {
-        public static final int action_settings=0x7f050002;
-        public static final int app_name=0x7f050000;
-        public static final int hello_world=0x7f050001;
+        public static final int action_settings=0x7f060001;
+        public static final int app_name=0x7f060000;
     }
     public static final class style {
         /** 
@@ -60,10 +122,9 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f060000;
+        public static final int AppBaseTheme=0x7f070000;
         /**  Application theme. 
- All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f060001;
+        public static final int AppTheme=0x7f070001;
     }
 }
