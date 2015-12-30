@@ -67,6 +67,7 @@ public class GuideActivity extends Activity implements OnClickListener {
 		switch (v.getId()) {
 		case R.id.btn_begin:
 			changeFirstInstall();
+			ContextApplication.firstInstall=false;
 			startActivity(new Intent(getApplicationContext(),
 					MainActivity.class));
 			finish();
