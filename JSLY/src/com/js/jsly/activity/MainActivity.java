@@ -88,4 +88,12 @@ public static final String URL_STRING="http://m.uu1.com/";
         	mainWebView.loadUrl("file:///android_asset/404.html");
         }
     }
+    
+    @Override
+    	protected void onDestroy() {
+    		if (mainWebView!=null) {
+				mainWebView.destroy();
+			}
+    		super.onDestroy();
+    	}
 }
