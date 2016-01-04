@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context="com.js.jsly.activity.GuideActivity"
     android:background="@android:color/white" >
 
     <android.support.v4.view.ViewPager
@@ -9,6 +10,39 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     </android.support.v4.view.ViewPager>
+    
+	<RadioGroup
+        android:id="@+id/guide_point_group"
+        android:layout_width="fill_parent"
+        android:layout_height="35dip"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <RadioButton
+            android:id="@+id/dot01"
+            style="@style/dot_style"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/dot02"
+            style="@style/dot_style"
+            android:layout_marginLeft="10dip"
+            android:checked="false" />
+
+        <RadioButton
+            android:id="@+id/dot03"
+            style="@style/dot_style"
+            android:layout_marginLeft="10dip"
+            android:checked="false" />
+
+        <RadioButton
+            android:id="@+id/dot04"
+            style="@style/dot_style"
+            android:layout_marginLeft="10dip"
+            android:checked="false" />
+    </RadioGroup>    
 
     <Button 
         android:id="@+id/btn_begin"

@@ -78,15 +78,23 @@ public final class R {
         public static final int btn_bg=0x7f020006;
         public static final int btn_bg_normal=0x7f020007;
         public static final int btn_bg_pressed=0x7f020008;
-        public static final int ic_launcher=0x7f020009;
-        public static final int selector_begin_bg=0x7f02000a;
-        public static final int splash_bg=0x7f02000b;
+        public static final int drawable_point_indicator=0x7f020009;
+        public static final int ic_launcher=0x7f02000a;
+        public static final int indicator_focus=0x7f02000b;
+        public static final int indicator_unfocus=0x7f02000c;
+        public static final int selector_begin_bg=0x7f02000d;
+        public static final int splash_bg=0x7f02000e;
     }
     public static final class id {
-        public static final int action_settings=0x7f090003;
-        public static final int btn_begin=0x7f090001;
+        public static final int action_settings=0x7f090008;
+        public static final int btn_begin=0x7f090006;
+        public static final int dot01=0x7f090002;
+        public static final int dot02=0x7f090003;
+        public static final int dot03=0x7f090004;
+        public static final int dot04=0x7f090005;
+        public static final int guide_point_group=0x7f090001;
         public static final int viewpager_guide=0x7f090000;
-        public static final int webview_main=0x7f090002;
+        public static final int webview_main=0x7f090007;
     }
     public static final class layout {
         public static final int activity_guide=0x7f030000;
@@ -126,5 +134,6 @@ public final class R {
         /**  Application theme. 
          */
         public static final int AppTheme=0x7f070001;
+        public static final int dot_style=0x7f070002;
     }
 }

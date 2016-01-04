@@ -9,6 +9,8 @@ import android.support.v4.view.ViewPager.SimpleOnPageChangeListener;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 
 import com.js.jsly.R;
 import com.js.jsly.adapter.GuidePagerAdapter;
@@ -19,11 +21,13 @@ public class GuideActivity extends Activity implements OnClickListener {
 	private Button beginButton;
 
 	private ViewPager guideViewPager;
+	
+	private RadioGroup dotLayout;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		if (ContextApplication.firstInstall) {// 首次安装
+		if (ContextApplication.firstInstall) {
 			setContentView(R.layout.activity_guide);
 			initUI();
 		} else {
@@ -31,9 +35,6 @@ public class GuideActivity extends Activity implements OnClickListener {
 		}
 	}
 
-	/**
-	 * 跳转到启动页
-	 */
 	private void redirectToSplash() {
 		Intent intent = new Intent(getApplicationContext(),
 				SplashActivity.class);
@@ -43,12 +44,19 @@ public class GuideActivity extends Activity implements OnClickListener {
 
 	private void initUI() {
 
+		dotLayout=(RadioGroup) findViewById(R.id.guide_point_group);
 		guideViewPager = (ViewPager) findViewById(R.id.viewpager_guide);
 		guideViewPager.setAdapter(new GuidePagerAdapter(new int[] {
 				R.drawable.bg_guide_1, R.drawable.bg_guide_2,
 				R.drawable.bg_guide_3, R.drawable.bg_guide_4 }, this));
 		guideViewPager
 				.setOnPageChangeListener(new SimpleOnPageChangeListener() {
+					
+					@Override
+					public void onPageScrolled(int position,
+							float positionOffset, int positionOffsetPixels) {
+						((RadioButton) dotLayout.getChildAt(position)).setChecked(true);
+					}
 					@Override
 					public void onPageSelected(int arg0) {
 						if (arg0 == 3) {
