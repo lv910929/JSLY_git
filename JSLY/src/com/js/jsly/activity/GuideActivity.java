@@ -61,8 +61,10 @@ public class GuideActivity extends Activity implements OnClickListener {
 					public void onPageSelected(int arg0) {
 						if (arg0 == 3) {
 							beginButton.setVisibility(View.VISIBLE);
+							dotLayout.setVisibility(View.GONE);
 						} else {
 							beginButton.setVisibility(View.GONE);
+							dotLayout.setVisibility(View.VISIBLE);
 						}
 					}
 				});
